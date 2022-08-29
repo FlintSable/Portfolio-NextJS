@@ -1,8 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router"
+
 // import Nav from "./Nav";
 // import Footer from "./Footer";
+
 
 export default function Container({ children, ...customMeta}){
     const router = useRouter();
@@ -20,9 +22,11 @@ export default function Container({ children, ...customMeta}){
                 <title>{meta.title}</title>
             </Head>
             <main className="dark:bg-greay-800 w-full">
+
                 {/* <Nav /> */}
                 <div>{children}</div>
                 {/* <Footer /> */}
+
             </main>
         </div>
     );
