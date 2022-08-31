@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
+// import userData from "@constants/data";
 
-// import Nav from "./Nav";
+import Nav from "./Nav";
 // import Footer from "./Footer";
 
 
@@ -21,9 +22,9 @@ export default function Container({ children, ...customMeta}){
             <Head>
                 <title>{meta.title}</title>
             </Head>
-            <main className="dark:bg-greay-800 w-full">
+            <main className="dark:bg-gray-800 w-full">
 
-                {/* <Nav /> */}
+                <Nav />
                 <div>{children}</div>
                 {/* <Footer /> */}
 
