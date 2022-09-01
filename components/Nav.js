@@ -14,22 +14,6 @@ export default function Nav(){
         setMounted(true);
     }, []);
     return(
-        <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
-            <div className="flex  md:flex-row justify-between items-center">
-                <div className="foot-semibold text-x1 dark:text-grey-100">
-                    <Link href="/">
-                        <a>
-                            <h1 className="font-semibold text-x1 dark:text-gray-100">
-                                {userData.Name}
-                            </h1>
-                            <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                                {userData.designation}
-                            </p>
-                        </a>
-                    </Link>
-                </div>
-
-            </div>
-        </div>
+        <nav></nav>
     );
 }
