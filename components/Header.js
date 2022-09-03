@@ -15,14 +15,16 @@ export default function Header(){
     return(
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Image src="/favicon.ico" width={30} height={30} />
+
             </div>
-            <nav className={styles.mainnav}>
+            <nav className={styles["main-nav"]}>
                 <ul className={styles.ul}>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
+                    <li className={styles.li}>01.About</li>
+                    <li className={styles.li}>02.Experince</li>
+                    <li className={styles.li}>03.Projects</li>
+                    <li className={styles.li}>04.Resume</li>
+
+ 
                 </ul>
             </nav>
         </header>

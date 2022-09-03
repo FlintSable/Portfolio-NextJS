@@ -19,11 +19,15 @@ export default function MainLanding({ children, ...customMeta}){
         ...customMeta,
     };
     return(
-        <div className={styles.main}>
+        <div className={styles["main-landing"]}>
 
                 {/* add the rest of the components in here */}
                 <Nav />
                 <div>{children}</div>
+                <div className={styles["hero-text-box"]}>
+                    <h1 className={styles["hero-text"]}>Nicholas</h1>
+                    <p>beep beep</p>
+                </div>
                 {/* <Footer /> */}
 
         </div>
