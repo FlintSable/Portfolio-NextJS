@@ -2,14 +2,15 @@ import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
-
-
+import mailstyles from "../styles/Email.module.css";
 import Nav from "./Nav";
-// import Footer from "./Footer";
+import HeroText from "./HeroText";
 
 
 export default function MainLanding({ children, ...customMeta}){
     const router = useRouter();
+
+
 
     const meta = {
         title: "Nicholas Noochla-or - Developer",
@@ -18,15 +19,31 @@ export default function MainLanding({ children, ...customMeta}){
         type: "webstie",
         ...customMeta,
     };
+
+
     return(
         <div className={styles["main-landing"]}>
 
                 {/* add the rest of the components in here */}
                 <Nav />
                 <div>{children}</div>
+
                 <div className={styles["hero-text-box"]}>
-                    <h1 className={styles["hero-text"]}>Nicholas</h1>
-                    <p>beep beep</p>
+                    {/* <h1 className={styles["hero-text"]}>textShift</h1> */}
+                    < HeroText />
+                    {/* <p>beep beep</p> */}
+                </div>
+
+                <div>
+                    {/* social media bar */}
+                </div>
+                <div className={mailstyles.mailwrap}>
+                    <div className={mailstyles.email}>
+                        {/* email bar */}
+                        <a href="mailto:nnlaor@gmail.com" className={mailstyles.a}>
+                            nnlaor@gmail.com
+                        </a>
+                    </div>
                 </div>
                 {/* <Footer /> */}
 
