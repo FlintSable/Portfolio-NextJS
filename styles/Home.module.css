@@ -17,6 +17,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .hero-text {
@@ -87,7 +88,7 @@
   justify-content: flex-start;
   height: 30px;
   width: 30px;
-  background-color: blue;
+  background-color: rgba(18, 255, 247, 0.5);
 
 }
 
