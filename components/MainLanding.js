@@ -27,12 +27,8 @@ export default function MainLanding({ children, ...customMeta}){
                 {/* add the rest of the components in here */}
                 <Nav />
                 <div>{children}</div>
-
-                <div className={styles["hero-text-box"]}>
-                    {/* <h1 className={styles["hero-text"]}>textShift</h1> */}
-                    < HeroText />
-                    {/* <p>beep beep</p> */}
-                </div>
+                
+                < HeroText />   
 
                 <div>
                     {/* social media bar */}
