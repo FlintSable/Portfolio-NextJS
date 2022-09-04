@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import mailstyles from "../styles/Email.module.css";
 import Nav from "./Nav";
 import HeroText from "./HeroText";
+import About from "./About";
 
 
 export default function MainLanding({ children, ...customMeta}){

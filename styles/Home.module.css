@@ -3,12 +3,20 @@
 }
 
 .main-landing {
+  /* grid-area: landing / landing / landing / landing;
   min-height: 100vh;
   background: linear-gradient(to right bottom, rgba(18, 255, 247, 0.5), rgb(179, 255, 171));
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility; */
+
+  grid-area: landing / landing / landing / landing;
+  margin: 0px;
+  background: linear-gradient(to right bottom, rgba(18, 255, 247, 0.5), rgb(179, 255, 171));
+  text-rendering: optimizelegibility;
+
+  
 }
 
 .hero-text-box {
@@ -48,11 +56,18 @@
 
 .wrapper {
   display: grid;
+  grid-template:
+        "landing landing landing" 100vh
+        "about about about" 100vh
+        "experience experience experience" 100vh
+        "projects projects projects" 100vh
+        "footer footer footer" 10px / 1fr 4fr 1fr;
   max-width: 100vw;
   height: 100%;
+  gap: 10px;
   margin: 0px auto;
   padding: 0px 20px;
-  /* color: rgb(255, 255, 255); */
+  color: rgb(255, 255, 255);
   background: linear-gradient(-90deg, 
                 rgba(0, 0, 0, 0.05) 1px, 
                 transparent 1px) 0% 0% / 4px 4px, 
@@ -121,6 +136,15 @@
   padding-left: 20px;
 }
 
+.main-about {
+
+  grid-area: about / about / about / about;
+  margin: 0px;
+  padding: 100px 0px;
+  background: linear-gradient(to right top, rgba(18, 255, 247, 0.5), rgb(179, 255, 171));
+  text-rendering: optimizelegibility;
+
+}
 
 .footer {
   display: flex;
