@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css"
 import Nav from "./Nav";
 import MainLanding from "./MainLanding";
 import Header from "./Header";
+import About from "./About";
 
 
 export default function Container({ children, ...customMeta}){
@@ -24,8 +25,10 @@ export default function Container({ children, ...customMeta}){
             <Head>
                 <title>{meta.title}</title>
             </Head>
-            <Header />
-            <MainLanding />
+            < Header />
+            < MainLanding />
+            < About />
+
             
         </div>
     );

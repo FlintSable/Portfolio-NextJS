@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import mailstyles from "../styles/Email.module.css";
 import Nav from "./Nav";
 import HeroText from "./HeroText";
+import About from "./About";
 
 
 export default function MainLanding({ children, ...customMeta}){
@@ -27,12 +28,8 @@ export default function MainLanding({ children, ...customMeta}){
                 {/* add the rest of the components in here */}
                 <Nav />
                 <div>{children}</div>
-
-                <div className={styles["hero-text-box"]}>
-                    {/* <h1 className={styles["hero-text"]}>textShift</h1> */}
-                    < HeroText />
-                    {/* <p>beep beep</p> */}
-                </div>
+                
+                < HeroText />   
 
                 <div>
                     {/* social media bar */}
