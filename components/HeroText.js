@@ -18,12 +18,10 @@ const HeroText = () => {
 
 
 return(
+
     <div className={styles["hero-text-box"]}>
-    {/* <h1 className={styles["hero-text"]}>textShift</h1> */} 
-        <div className={styles["hero-text-box"]}>
-            <h1 className={styles["hero-text"]}>{hero_text_array[0]}</h1>
-            <p className={styles["hero-subtitle"]}>I'm a software engineer from  Jewel City California</p>
-        </div>
+        <h1 className={styles["hero-text"]}>{hero_text_array[0]}</h1>
+        <p className={styles["hero-subtitle"]}>I'm a software engineer from  Jewel City California</p>
     </div>
 
 
