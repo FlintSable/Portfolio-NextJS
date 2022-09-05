@@ -1,6 +1,6 @@
-.container {
+/* .container {
   padding: 0 2rem;
-}
+} */
 
 .main-landing {
   /* grid-area: landing / landing / landing / landing;
@@ -94,6 +94,7 @@
   transition: top 0.3s ease 0s;
   background-color: rgba(244, 244, 244, 0.7);
   grid-area: header / header / header / header;
+
 }
 
 .logo{
@@ -116,6 +117,7 @@
   flex-direction: row;
   -webkit-box-pack: end;
   justify-content: flex-end;
+
 }
 
 .ul {

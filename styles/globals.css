@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base; */
 /* @tailwind components; */
 /* @tailwind utilities; */
 
@@ -23,13 +23,14 @@ body {
                 rgb(242, 242, 242); */
 }
 
-a {
-  /* color: inherit; */
-  /* text-decoration: none; */
+html {
+  scroll-behavior: smooth;
 }
 
-/* * {
+
+
+* {
   box-sizing: border-box;
-} */
+}
 
 
