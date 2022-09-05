@@ -68,15 +68,14 @@
   margin: 0px auto;
   padding: 0px 20px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(-90deg, 
-                rgba(0, 0, 0, 0.05) 1px, 
+  background: linear-gradient(-90deg,rgba(0, 0, 0, 0.05) 1px, 
                 transparent 1px) 0% 0% / 4px 4px, 
                 linear-gradient(rgba(0, 0, 0, 0.05) 1px, 
                 transparent 1px) 0% 0% / 4px 4px, 
-                linear-gradient(transparent 3px, 
+              linear-gradient(transparent 3px, 
                 rgb(242, 242, 242) 3px, rgb(242, 242, 242) 78px, 
                 transparent 78px) 0% 0% / 80px 80px, 
-                linear-gradient(-90deg, transparent 3px,
+              linear-gradient(-90deg, transparent 3px,
                 rgb(242, 242, 242) 3px, 
                 rgb(242, 242, 242) 78px, 
                 transparent 78px) 0% 0% / 80px 80px, 
@@ -86,7 +85,6 @@
 .header {
   position: fixed;
   display: flex;
-  justify-content: space-between;
   width: calc(100% - 40px);
   height: 50px;
   margin: 0px 20px;
@@ -94,6 +92,8 @@
   transition: top 0.3s ease 0s;
   background-color: rgba(244, 244, 244, 0.7);
   grid-area: header / header / header / header;
+  justify-content: space-between;
+
 
 }
 
