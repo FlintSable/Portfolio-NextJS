@@ -26,7 +26,7 @@ export default function MainLanding({ children, ...customMeta}){
         <div className={styles["main-landing"]}>
 
                 {/* add the rest of the components in here */}
-                <Nav />
+                {/* <Nav /> */}
                 <div>{children}</div>
                 
                 < HeroText />   
