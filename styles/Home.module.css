@@ -29,10 +29,14 @@
   gap: 10px;
   margin: 0px auto;
   padding: 0px 20px;
-  background: linear-gradient(-90deg,rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px, 
+  background: 
+              linear-gradient(-90deg,rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px,
               linear-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px, 
               linear-gradient(transparent 3px,rgb(242, 242, 242) 3px, rgb(242, 242, 242) 78px, transparent 78px) 0% 0% / 80px 80px, 
               linear-gradient(-90deg, transparent 3px,rgb(242, 242, 242) 3px,rgb(242, 242, 242) 78px, transparent 78px) 0% 0% / 80px 80px,rgb(242, 242, 242);
+
+
+              
 }
 
 .header {
@@ -99,7 +103,7 @@
 
 .li {
   display: list-item;
-  text-decoration: none;
+  list-style-type: none;
   padding-left: 20px;
 }
 
@@ -108,7 +112,8 @@
   grid-area: landing / landing / landing / landing;
   margin: 0px;
   /* background: linear-gradient(to right bottom, rgba(18, 255, 247, 0.5), rgb(179, 255, 171)); */
-  background: linear-gradient(to right bottom, rgba(213, 213, 213, 0.5), rgb(40, 128, 205));
+  /* background: linear-gradient(to right bottom, rgba(213, 213, 213, 0.5), rgb(40, 128, 205)); */
+  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(11, 120, 160));
 
   text-rendering: optimizelegibility;
 
