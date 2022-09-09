@@ -29,10 +29,14 @@
   gap: 10px;
   margin: 0px auto;
   padding: 0px 20px;
-  background: linear-gradient(-90deg,rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px, 
+  background: 
+              linear-gradient(-90deg,rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px,
               linear-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px, 
               linear-gradient(transparent 3px,rgb(242, 242, 242) 3px, rgb(242, 242, 242) 78px, transparent 78px) 0% 0% / 80px 80px, 
               linear-gradient(-90deg, transparent 3px,rgb(242, 242, 242) 3px,rgb(242, 242, 242) 78px, transparent 78px) 0% 0% / 80px 80px,rgb(242, 242, 242);
+
+
+              
 }
 
 .header {
@@ -99,7 +103,7 @@
 
 .li {
   display: list-item;
-  text-decoration: none;
+  list-style-type: none;
   padding-left: 20px;
 }
 
@@ -108,7 +112,8 @@
   grid-area: landing / landing / landing / landing;
   margin: 0px;
   /* background: linear-gradient(to right bottom, rgba(18, 255, 247, 0.5), rgb(179, 255, 171)); */
-  background: linear-gradient(to right bottom, rgba(213, 213, 213, 0.5), rgb(40, 128, 205));
+  /* background: linear-gradient(to right bottom, rgba(213, 213, 213, 0.5), rgb(40, 128, 205)); */
+  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(11, 120, 160));
 
   text-rendering: optimizelegibility;
 
@@ -156,10 +161,54 @@
   grid-area: about / about / about / about;
   margin: 0px;
   padding: 100px 0px;
-  background: linear-gradient(to right top, rgba(18, 255, 247, 0.5), rgb(179, 255, 171));
-
+  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(11, 120, 160));
   text-rendering: optimizelegibility;
 
+}
+
+.interior-about {
+  margin: 0px 150px;
+  padding: 0px 100px;
+}
+
+.textbox-about {
+  font-size: 0.9em;
+    width: 60%;
+    max-width: 480px;
+    color: rgb(66, 66, 66);
+    padding: 20px 20px 20px 0px;
+    line-height: 1.25;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.layout-about {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  align-items: flex-start;
+}
+
+.text-p-about {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.ul-about {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 0px;
+  list-style: outside none none;  
+}
+
+.img-about {
+  width: 34%;
+  margin-right: -60px;
+  filter: grayscale(100%);
 }
 
 .footer {
