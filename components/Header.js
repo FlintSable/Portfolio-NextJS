@@ -13,20 +13,22 @@ export default function Header(){
         setMounted(true);
     }, []);
     return(
-        <header className={styles.header}>
-            <div className={styles.logo}>
-            </div>
-            <nav className={styles["main-nav"]}>
-                <ul className={styles.ul}>
-                    <li className={styles.li}>01.About</li>
-                    <li className={styles.li}>02.Experince</li>
-                    <li className={styles.li}>03.Projects</li>
-                    <li className={styles.li}>04.Resume</li>
+        <>
+            <header className={styles.header}>
+                <div className={styles.logo}>
+                </div>
+                <nav className={styles["main-nav"]}>
+                    <ul className={styles.ul}>
+                        <li className={styles.li}>01.About</li>
+                        <li className={styles.li}>02.Experince</li>
+                        <li className={styles.li}>03.Projects</li>
+                        <li className={styles.li}>04.Resume</li>
 
- 
-                </ul>
-            </nav>
-        </header>
+    
+                    </ul>
+                </nav>
+            </header>
+        </>
 
     );
 }
