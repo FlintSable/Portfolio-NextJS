@@ -113,7 +113,7 @@
   margin: 0px;
   /* background: linear-gradient(to right bottom, rgba(18, 255, 247, 0.5), rgb(179, 255, 171)); */
   /* background: linear-gradient(to right bottom, rgba(213, 213, 213, 0.5), rgb(40, 128, 205)); */
-  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(11, 120, 160));
+  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(18, 192, 255));
 
   text-rendering: optimizelegibility;
 
@@ -161,7 +161,7 @@
   grid-area: about / about / about / about;
   margin: 0px;
   padding: 100px 0px;
-  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(11, 120, 160));
+  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(18, 192, 255));
   text-rendering: optimizelegibility;
 
 }
