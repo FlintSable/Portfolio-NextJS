@@ -19,9 +19,9 @@ return(
                     His ad iudico suavitate. Duo augue noster appareat ad. Aliquip oblique sed te. Mea tractatos repudiandae no. Modo mutat malorum ad est. Cu sint mollis neglegentur pri, inermis disputationi ne quo. Nam id blandit argumentum, sit paulo simul no.
                     </p>
                     <ul className={styles["ul-about"]}>
-                        <li>one</li>
-                        <li>two</li>
-                        <li>three</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>React</li>
                         <li>four</li>
                         <li>five</li>
                         <li>six</li>
