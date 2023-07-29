@@ -1,2 +1,2 @@
-# Portfolio-NextJS-TailwindCSS
+# Portfolio-NextJS
 New Portfolio using NextJS and Tailwind CSS
