@@ -40,8 +40,8 @@
 }
 
 .header {
-  /* position: fixed; */
-  position:absolute;
+  position: fixed;
+  /* position:absolute; */
   display: flex;
 
   width: calc(100% - 40px);

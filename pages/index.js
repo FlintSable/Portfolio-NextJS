@@ -13,8 +13,9 @@ export default function Home() {
   return (
     <Container
       title="Nicholas Noochla-or - Developer">
-
+      <script src="./nav.js"></script>
       </Container>
+      
 
   );
 }
