@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import styles from "../styles/Home.module.css"
+import styles from '../styles/Home.module.css'
 // import userData from "@constants/data";
-
+import Script from 'next/script';
 import Nav from "./Nav";
 import MainLanding from "./MainLanding";
 import Header from "./Header";
@@ -28,6 +28,20 @@ export default function Container({ children, ...customMeta}){
             < Header />
             < MainLanding />
             < About />
+            <Script>
+                {
+                    `var prevScrollpos = window.pageYOffset;
+                    window.onscroll = function() {
+                    let currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("nav").style.top = "0";
+                    } else {
+                        document.getElementById("nav").style.top = "-100px";
+                    }
+                    prevScrollpos = currentScrollPos;
+                    }`
+                }
+            </Script>
 
             
         </div>
