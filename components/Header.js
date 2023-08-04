@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { useRouter } from "next/router"
-import styles from "../styles/Home.module.css"
+import { useRouter } from 'next/router'
+import styles from '../styles/Home.module.css'
+
+
 
 
 
@@ -14,7 +16,7 @@ export default function Header(){
     }, []);
     return(
         <>
-            <header className={styles.header}>
+            <header id='nav' className={styles.header}>
                 <div className={styles.logo}>
                 </div>
                 <nav className={styles["main-nav"]}>
