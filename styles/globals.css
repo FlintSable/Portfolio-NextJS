@@ -1,3 +1,21 @@
+:root {
+    --fs-xl: clamp(2em, 4vw + 1em, 20em);
+  }
+  
+  
+
+/* @media (width >= 500px){
+    :root{
+      --fs-xl: clamp(2em, 4vw + 1em, 20em);
+    }
+} */
+
+/* @media (width >= 700px){
+    :root{
+      --fs-xl: 10em;
+    }
+} */
+
 * {box-sizing: border-box;}
 
 body {margin: 0;}

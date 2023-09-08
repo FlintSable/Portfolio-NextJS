@@ -39,7 +39,30 @@ export default function Container({ children, ...customMeta}){
                         document.getElementById("nav").style.top = "-100px";
                     }
                     prevScrollpos = currentScrollPos;
-                    }`
+                    }
+                    
+
+                    // function textSwap(){
+                    //     var op = document.getElementById("hero-text")
+                    //     if(window.getComputedStyle(op).getPropertyValue("opacity") < 0.5){
+                    //         console.log(window.getComputedStyle(op).getPropertyValue("opacity"));
+                    //         if(document.getElementById("hero-text").innerHTML == "Nicholas"){
+                    //             document.getElementById("hero-text").innerHTML = "noochla";
+
+                    //         } else if(document.getElementById("hero-text").innerHTML == "noochla"){
+                    //             document.getElementById("hero-text").innerHTML = "Nicholas";
+
+                    //         }
+                    //     }
+
+
+                    //     setTimeout(textSwap, 1200);
+                    // }
+                    // textSwap();
+                    
+
+                    
+                    `
                 }
             </Script>
 
