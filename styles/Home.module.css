@@ -1,42 +1,70 @@
-@media (min-width: 500px) {
+/* bit confusing and doesn't work 
+were saying that this grid formatting applies to devices from 500px to 699px
+
+These media queries are only related to the grid layout
+*/
+
+@media (width >= 300px) {
+  /* .wrapper {
+    grid-template-columns: auto auto;
+    grid-template:
+        "landing" 100vw
+        "about" 100vw
+        "eperience" 100vw
+        "projects" 100vw
+        "footer" 100vw;
+  } */
   .wrapper {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "sidebar content"
-        "ad footer";
+    grid-template:
+      "landing landing landing" 100vh
+      "about about about" 100vh
+      "experience experience experience" 100vh
+      "projects projects projects" 100vh
+      "footer footer footer" 10px / 1fr 4fr 1fr;
   }
 }
 
-@media (min-width: 700px) {
+/* applies only if width is >=700px */
+@media (width >= 700px) {
   .wrapper {
     grid-template:
-    "landing landing landing" 100vh
-    "about about about" 100vh
-    "experience experience experience" 100vh
-    "projects projects projects" 100vh
-    "footer footer footer" 10px / 1fr 4fr 1fr;
-
+      "landing landing landing" 100vh
+      "about about about" 100vh
+      "experience experience experience" 100vh
+      "projects projects projects" 100vh
+      "footer footer footer" 10px / 1fr 4fr 1fr;
   }
 }
 
 .wrapper {
   display: grid;
   max-width: 100vw;
+  /* width: 100vw; if you do this there will be a horizontal scroll */
   height: 100%;
   color: rgb(255, 255, 255);
+  font: 1em Helvetica, arial, sans-serif;
   gap: 10px;
   margin: 0px auto;
   padding: 0px 20px;
-  background: 
-              linear-gradient(-90deg,rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px,
-              linear-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px, 
-              linear-gradient(transparent 3px,rgb(242, 242, 242) 3px, rgb(242, 242, 242) 78px, transparent 78px) 0% 0% / 80px 80px, 
-              linear-gradient(-90deg, transparent 3px,rgb(242, 242, 242) 3px,rgb(242, 242, 242) 78px, transparent 78px) 0% 0% / 80px 80px,rgb(242, 242, 242);
-
-
-              
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4) 1px, transparent 1px)
+      0% 0% / 4px 4px,
+    linear-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px,
+    linear-gradient(
+        transparent 3px,
+        rgb(242, 242, 242) 3px,
+        rgb(242, 242, 242) 78px,
+        transparent 78px
+      )
+      0% 0% / 80px 80px,
+    linear-gradient(
+        -90deg,
+        transparent 3px,
+        rgb(242, 242, 242) 3px,
+        rgb(242, 242, 242) 78px,
+        transparent 78px
+      )
+      0% 0% / 80px 80px,
+    rgb(242, 242, 242);
 }
 
 .header {
@@ -46,7 +74,7 @@
 
   width: calc(100% - 40px);
   height: 50px;
-  margin: 0 20px 0 20px;
+  /* margin: 0 20px 0 20px; */
   padding: 10px;
   transition: top 0.3s;
 
@@ -57,13 +85,12 @@
 
 @media (min-width: 700px) {
   .header {
-    justify-content: space-between; 
-
+    justify-content: space-between;
     flex-direction: row;
   }
 }
 
-.logo{
+.logo {
   display: flex;
   flex-direction: row;
   /* -webkit-box-pack: start; */
@@ -71,10 +98,9 @@
   height: 30px;
   width: 30px;
   background-color: rgba(18, 255, 247, 0.5);
-
 }
 
-.main-nav{
+.main-nav {
   display: flex;
   margin-top: 2px;
   width: 500px;
@@ -83,7 +109,6 @@
   flex-direction: row;
   -webkit-box-pack: end;
   justify-content: flex-end;
-
 }
 
 .ul {
@@ -93,11 +118,9 @@
   padding-left: 0px;
   font-size: 13px;
   margin: auto 0px;
-  
 }
 
-.li:first-child{
-  
+.li:first-child {
   padding-left: 0px;
 }
 
@@ -107,17 +130,29 @@
   padding-left: 20px;
 }
 
-.main-landing {
+.li::before {
+  counter-increment: item 1;
+  content: "0" counter(item) ".";
+}
 
+.a {
+  display: list-item;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.main-landing {
   grid-area: landing / landing / landing / landing;
   margin: 0px;
   /* background: linear-gradient(to right bottom, rgba(18, 255, 247, 0.5), rgb(179, 255, 171)); */
   /* background: linear-gradient(to right bottom, rgba(213, 213, 213, 0.5), rgb(40, 128, 205)); */
-  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(18, 192, 255));
+  background: linear-gradient(
+    to right bottom,
+    rgba(140, 194, 230, 0.5),
+    rgb(18, 192, 255)
+  );
 
   text-rendering: optimizelegibility;
-
-  
 }
 
 .hero-text-box {
@@ -126,11 +161,46 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  overflow-wrap: break-word;
+  /* overflow-wrap: normal; */
+  white-space: nowrap;
 }
 
 .hero-text {
-  animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms infinite alternate none running layerize;
+  animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms infinite alternate none
+    running layerize;
+  text-transform: uppercase;
+  opacity: 0;
+  margin: 0px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  /* font: italic bold 5em Roboto, sans-serif; */
+  /* font: italic bold clamp(2em, 4vw + 1em, 20em) Roboto, sans-serif; */
+  font: italic bold var(--fs-xl) Roboto, sans-serif;
+
+  cursor: default;
+  user-select: none;
+  text-align: center;
+}
+
+@media (width <= 800px) {
+  .hero-text::after {
+    font-size: 5em;
+  }
+  .hero-text-2::after {
+    font-size: 5em;
+  }
+}
+
+@media (width <= 499px) {
+  .hero-text::after {
+    font-size: 5em;
+  }
+}
+
+/* .hero-text-2 {
+  position: absolute;
+  top: 10px;
+  animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 2400ms infinite alternate none running layerize;
   text-transform: uppercase;
   opacity: 0;
   margin: 0px;
@@ -140,52 +210,67 @@
   cursor: default;
   user-select: none;
   text-align: center;
-}
+} */
 
 @keyframes layerize {
   0% {
     opacity: 0;
     transform: translate(0, 0);
-    text-shadow: 0 0 transparent, 0em 0em rgba(255, 255, 255, 0.4), 0em 0em rgba(255, 255, 255, 0.3), 0em 0em rgba(255, 221, 27, 0.2), 0em 0em rgba(255, 221, 27, 0.1);
+    text-shadow: 0 0 transparent, 0em 0em rgba(255, 255, 255, 0.4),
+      0em 0em rgba(255, 255, 255, 0.3), 0em 0em rgba(255, 221, 27, 0.2),
+      0em 0em rgba(255, 221, 27, 0.1);
+    /* content: "Nicholas"; */
   }
+
   100% {
     opacity: 1;
     transform: translate(-0.066666em, -0.066666em);
-    text-shadow: 0 0 transparent, 0.033333em 0.033333em rgba(255, 255, 255, 0.4), 0.066666em 0.066666em rgba(255, 255, 255, 0.3), 0.099999em 0.099999em rgba(255, 221, 27, 0.2), 0.133332em 0.133332em rgba(255, 221, 27, 0.1);
+    text-shadow: 0 0 transparent, 0.033333em 0.033333em rgba(255, 255, 255, 0.4),
+      0.066666em 0.066666em rgba(255, 255, 255, 0.3),
+      0.099999em 0.099999em rgba(255, 221, 27, 0.2),
+      0.133332em 0.133332em rgba(255, 221, 27, 0.1);
+    /* content: "Noochla"; */
   }
 }
 
-
 .main-about {
-
   grid-area: about / about / about / about;
   margin: 0px;
-  padding: 100px 0px;
-  background: linear-gradient(to right bottom, rgba(140, 194, 230, 0.5), rgb(18, 192, 255));
+  padding: 200px 0px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(140, 194, 230, 0.5),
+    rgb(18, 192, 255)
+  );
   text-rendering: optimizelegibility;
-
 }
 
 .interior-about {
-  margin: 0px 150px;
-  padding: 0px 100px;
+  margin: 0px auto;
+  /* padding: 0px 100px; */
+  max-width: 900px;
 }
 
 .textbox-about {
-  font-size: 0.9em;
-    width: 60%;
-    max-width: 480px;
-    color: rgb(66, 66, 66);
-    padding: 20px 20px 20px 0px;
-    line-height: 1.25;
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  /* font-size: 0.9em; */
+  font-size: var(--fs-400);
+  /* width: 60%; */
+  max-width: 480px;
+  color: rgb(66, 66, 66);
+  /* background-color: hsla(0, 100%, 100%, 0.5); */
+  padding: 20px 20px 20px 20px;
+  line-height: 1.25;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
 .layout-about {
-  display: flex;
-  justify-content: space-between;
-  -webkit-box-pack: justify;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  max-width: 900px;
+  background-color: hsla(0, 100%, 100%, 0.7);
+  border-radius: 20px;
 }
 
 .text-p-about {
@@ -202,13 +287,22 @@
   overflow: hidden;
   margin-top: 20px;
   padding: 0px;
-  list-style: outside none none;  
+  list-style: outside none none;
 }
 
 .img-about {
-  width: 34%;
+  /* width: 34%; */
+  position: relative;
+  max-width: 320px;
+  padding-right: 10px;
   margin-right: -60px;
   filter: grayscale(100%);
+}
+
+.custom-img {
+  padding-top: 45px;
+  /* padding-right: 10px; */
+  border-radius: 20px;
 }
 
 .footer {
@@ -297,11 +391,11 @@
 }
 
 .hero-subtitle {
-    margin-top: 0px;
-    font-style: italic;
-    font-size: 2em;
-    color: white;
-    /* background-color: #8DD6E8; */
+  margin-top: 0px;
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  /* background-color: #8DD6E8; */
 }
 
 /* .logo {
