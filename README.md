@@ -5,4 +5,5 @@ New Portfolio using NextJS
 ## Project Checklist
 
 - [ ] create call to action on main first fold
-- [ ] tagline
+- [x] tagline
+- [ ] responsive
