@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import styles from "../styles/Home.module.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
@@ -13,7 +13,9 @@ export default function Header() {
   return (
     <>
       <header id="nav" className={styles.header}>
-        <div className={styles.logo}></div>
+        <div className={styles.logo}>
+          <img src="/pen.webp"></img>
+        </div>
         <nav className={styles["main-nav"]}>
           <ul className={styles.ul}>
             <li className={styles.li}>

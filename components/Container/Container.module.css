@@ -1,0 +1,64 @@
+.wrapper {
+  display: grid;
+  max-width: 100vw;
+  /* width: 100vw; if you do this there will be a horizontal scroll */
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font: 1em Helvetica, arial, sans-serif;
+  gap: 10px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4) 1px, transparent 1px)
+      0% 0% / 4px 4px,
+    linear-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px) 0% 0% / 4px 4px,
+    linear-gradient(
+        transparent 3px,
+        rgb(242, 242, 242) 3px,
+        rgb(242, 242, 242) 78px,
+        transparent 78px
+      )
+      0% 0% / 80px 80px,
+    linear-gradient(
+        -90deg,
+        transparent 3px,
+        rgb(242, 242, 242) 3px,
+        rgb(242, 242, 242) 78px,
+        transparent 78px
+      )
+      0% 0% / 80px 80px,
+    rgb(242, 242, 242);
+}
+
+
+/* Media Queries*/
+@media (width >= 300px) {
+  /* .wrapper {
+    grid-template-columns: auto auto;
+    grid-template:
+        "landing" 100vw
+        "about" 100vw
+        "eperience" 100vw
+        "projects" 100vw
+        "footer" 100vw;
+  } */
+  .wrapper {
+    grid-template:
+      "landing landing landing" 100vh
+      "about about about" 100vh
+      "experience experience experience" 100vh
+      "projects projects projects" 100vh
+      "footer footer footer" 10px / 1fr 4fr 1fr;
+  }
+}
+
+/* applies only if width is >=700px */
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template:
+      "landing landing landing" 100vh
+      "about about about" 100vh
+      "experience experience experience" 100vh
+      "projects projects projects" 100vh
+      "footer footer footer" 10px / 1fr 4fr 1fr;
+  }
+}

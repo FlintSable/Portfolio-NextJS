@@ -1,0 +1,109 @@
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    /* overflow-wrap: normal; */
+    white-space: nowrap;
+  }
+  
+  .hero-text {
+    /* animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms infinite alternate none
+      running layerize; */
+    animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms running layerize
+      forwards;
+    text-transform: uppercase;
+    opacity: 0;
+    margin: 0px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    /* font: italic bold 5em Roboto, sans-serif; */
+    font: italic bold var(--fs-xl) Roboto, sans-serif;
+  
+    cursor: default;
+    user-select: none;
+    text-align: center;
+  }
+  
+
+  
+  @keyframes layerize {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0);
+      text-shadow: 0 0 transparent, 0em 0em rgba(255, 255, 255, 0.4),
+        0em 0em rgba(255, 255, 255, 0.3), 0em 0em rgba(255, 221, 27, 0.2),
+        0em 0em rgba(255, 221, 27, 0.1);
+      /* content: "Nicholas"; */
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(-0.066666em, -0.066666em);
+      text-shadow: 0 0 transparent, 0.033333em 0.033333em rgba(255, 255, 255, 0.4),
+        0.066666em 0.066666em rgba(255, 255, 255, 0.3),
+        0.099999em 0.099999em rgba(255, 221, 27, 0.2),
+        0.133332em 0.133332em rgba(255, 221, 27, 0.1);
+      /* content: "Noochla"; */
+    }
+  }
+  
+  @keyframes hero-text-animation {
+    0%,
+    50% {
+      opacity: 0;
+      transform: translate(0, 0);
+      text-shadow: 0 0 transparent, 0em 0em rgba(255, 255, 255, 0.4),
+        0em 0em rgba(255, 255, 255, 0.3), 0em 0em rgba(255, 221, 27, 0.2),
+        0em 0em rgba(255, 221, 27, 0.1);
+    }
+  
+    25%,
+    75% {
+      opacity: 1;
+      transform: translate(-0.066666em, -0.066666em);
+      text-shadow: 0 0 transparent, 0.033333em 0.033333em rgba(255, 255, 255, 0.4),
+        0.066666em 0.066666em rgba(255, 255, 255, 0.3),
+        0.099999em 0.099999em rgba(255, 221, 27, 0.2),
+        0.133332em 0.133332em rgba(255, 221, 27, 0.1);
+    }
+  }
+
+  .hero-subtitle {
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    /* background-color: #8dd6e8; */
+    white-space: normal;
+  }
+  
+  .hero-tagline {
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    /* background-color: #8dd6e8; */
+    white-space: normal;
+    padding: 0 15%;
+    text-align: lett;
+  }
+
+
+
+  @media (width <= 800px) {
+    .hero-text::after {
+      font-size: 5em;
+    }
+    .hero-text-2::after {
+      font-size: 5em;
+    }
+  }
+  
+  @media (width <= 499px) {
+    .hero-text::after {
+      font-size: 5em;
+    }
+  }
