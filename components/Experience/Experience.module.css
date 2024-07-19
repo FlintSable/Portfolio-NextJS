@@ -1,0 +1,23 @@
+.main-experience {
+    grid-area: experience / experience / experience / experience;
+    margin: 0px;
+    padding: 200px 0px;
+    background: linear-gradient(
+        to right bottom,
+        rgba(140, 194, 230, 0.5),
+        rgb(18, 192, 255)
+    );
+    text-rendering: optimizelegibility;
+}
+  
+.interior-experience {
+    margin: 0px auto;
+    max-width: 900px;
+}
+
+.section-h1 {
+    text-transform: uppercase;
+    font: bold var(--fs-l) Roboto, sans-serif;
+
+    /* text-shadow: 4px 3px 0px #1170b4, 9px 8px 0px rgba(2, 0, 33, 0.15); */
+}

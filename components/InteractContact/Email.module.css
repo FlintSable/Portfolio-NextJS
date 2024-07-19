@@ -1,0 +1,41 @@
+.mailwrap {
+    position: fixed;
+    width: 40px;
+    bottom: 0px;
+    right: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.mailwrap:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: rgb(168, 178, 209);
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin: 20px auto;
+    padding: 10px;
+}

@@ -1,20 +1,31 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import Container from "../components/Container";
+// import styles from '../styles/Home.module.css';
+import Container from "@components/Container/Container";
+import Header from "@components/Header/Header";
+import MainLanding from '@components/MainLanding/MainLanding';
+import About from '@components/About/About';
+import Experience from '@components/Experience/Experience';
 import userData from "@constants/data";
 
 
-import MainLanding from "../components/MainLanding";
-import Header from "../components/Header";
-import About from "../components/About";
 
-export default function Home() {
+export default function Home({children, ...customMeta}) {
+  const meta = {
+    title: "Nicholas Noochla-or - Developer",
+    description: "Coding out from the IT trenches.",
+    image: "/avatar.png",
+    type: "webstie",
+    ...customMeta,
+  };
   return (
-    <Container
-      title="Nicholas Noochla-or - Developer">
-      {/* <script src="./nav.js"></script> */}
-      </Container>
+    <Container title="Nicholas Noochla-or - Developer">
+      <Head><title>{meta.title}</title></Head>
+      <Header />
+      <MainLanding />
+      <About />
+      <Experience/>
+    </Container>
       
 
   );
