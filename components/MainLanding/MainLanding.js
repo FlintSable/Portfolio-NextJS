@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import styles from "../styles/Home.module.css";
-import mailstyles from "../styles/Email.module.css";
-import Nav from "./Nav";
-import HeroText from "./HeroText";
-import About from "./About";
+import styles from "./MainLanding.module.css";
+import Email from "@components/InteractContact/Email";
+// import Nav from "./Nav";
+import HeroText from "@components/HeroText/HeroText";
+// import About from "./About";
 
 
 export default function MainLanding({ children, ...customMeta}){
@@ -34,14 +34,7 @@ export default function MainLanding({ children, ...customMeta}){
                 <div>
                     {/* social media bar */}
                 </div>
-                <div className={mailstyles.mailwrap}>
-                    <div className={mailstyles.email}>
-                        {/* email bar */}
-                        <a href="mailto:nnlaor@gmail.com" className={mailstyles.a}>
-                            nnlaor@gmail.com
-                        </a>
-                    </div>
-                </div>
+                <Email />
                 {/* <Footer /> */}
 
         </div>
