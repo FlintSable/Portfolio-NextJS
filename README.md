@@ -1,4 +1,9 @@
-# New Portfolio using NextJS and CSS Modules
+# Portfolio-NextJS
 
-Start the app with 
-```npm run dev```
+New Portfolio using NextJS
+
+## Project Checklist
+
+- [ ] create call to action on main first fold
+- [x] tagline
+- [ ] responsive

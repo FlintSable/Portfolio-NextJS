@@ -1,0 +1,11 @@
+.main-landing {
+    grid-area: landing / landing / landing / landing;
+    margin: 0px;
+    background: linear-gradient(
+      to right bottom,
+      rgba(140, 194, 230, 0.5),
+      rgb(18, 192, 255)
+    );
+  
+    text-rendering: optimizelegibility;
+  }

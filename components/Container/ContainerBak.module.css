@@ -160,21 +160,22 @@ These media queries are only related to the grid layout
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  /* text-align: center; */
   /* overflow-wrap: normal; */
   white-space: nowrap;
 }
 
 .hero-text {
-  animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms infinite alternate none
-    running layerize;
+  /* animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms infinite alternate none
+    running layerize; */
+  animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms running layerize
+    forwards;
   text-transform: uppercase;
   opacity: 0;
   margin: 0px;
   width: 100%;
   color: rgb(255, 255, 255);
   /* font: italic bold 5em Roboto, sans-serif; */
-  /* font: italic bold clamp(2em, 4vw + 1em, 20em) Roboto, sans-serif; */
   font: italic bold var(--fs-xl) Roboto, sans-serif;
 
   cursor: default;
@@ -197,21 +198,6 @@ These media queries are only related to the grid layout
   }
 }
 
-/* .hero-text-2 {
-  position: absolute;
-  top: 10px;
-  animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 2400ms infinite alternate none running layerize;
-  text-transform: uppercase;
-  opacity: 0;
-  margin: 0px;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  font: italic bold 10em Roboto, sans-serif;
-  cursor: default;
-  user-select: none;
-  text-align: center;
-} */
-
 @keyframes layerize {
   0% {
     opacity: 0;
@@ -233,6 +219,32 @@ These media queries are only related to the grid layout
   }
 }
 
+@keyframes hero-text-animation {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translate(0, 0);
+    text-shadow: 0 0 transparent, 0em 0em rgba(255, 255, 255, 0.4),
+      0em 0em rgba(255, 255, 255, 0.3), 0em 0em rgba(255, 221, 27, 0.2),
+      0em 0em rgba(255, 221, 27, 0.1);
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+    transform: translate(-0.066666em, -0.066666em);
+    text-shadow: 0 0 transparent, 0.033333em 0.033333em rgba(255, 255, 255, 0.4),
+      0.066666em 0.066666em rgba(255, 255, 255, 0.3),
+      0.099999em 0.099999em rgba(255, 221, 27, 0.2),
+      0.133332em 0.133332em rgba(255, 221, 27, 0.1);
+  }
+}
+.section-h1 {
+  text-transform: uppercase;
+  font: bold var(--fs-l) Roboto, sans-serif;
+
+  /* text-shadow: 4px 3px 0px #1170b4, 9px 8px 0px rgba(2, 0, 33, 0.15); */
+}
 .main-about {
   grid-area: about / about / about / about;
   margin: 0px;
@@ -247,14 +259,11 @@ These media queries are only related to the grid layout
 
 .interior-about {
   margin: 0px auto;
-  /* padding: 0px 100px; */
   max-width: 900px;
 }
 
 .textbox-about {
-  /* font-size: 0.9em; */
   font-size: var(--fs-400);
-  /* width: 60%; */
   max-width: 480px;
   color: rgb(66, 66, 66);
   /* background-color: hsla(0, 100%, 100%, 0.5); */
@@ -297,6 +306,23 @@ These media queries are only related to the grid layout
   padding-right: 10px;
   margin-right: -60px;
   filter: grayscale(100%);
+}
+
+.main-experience {
+  grid-area: experience / experience / experience / experience;
+  margin: 0px;
+  padding: 200px 0px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(140, 194, 230, 0.5),
+    rgb(18, 192, 255)
+  );
+  text-rendering: optimizelegibility;
+}
+
+.interior-experience {
+  margin: 0px auto;
+  max-width: 900px;
 }
 
 .custom-img {
@@ -395,7 +421,20 @@ These media queries are only related to the grid layout
   font-style: italic;
   font-size: 2em;
   color: white;
-  /* background-color: #8DD6E8; */
+  text-align: center;
+  /* background-color: #8dd6e8; */
+  white-space: normal;
+}
+
+.hero-tagline {
+  margin-top: 0px;
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  /* background-color: #8dd6e8; */
+  white-space: normal;
+  padding: 0 15%;
+  text-align: lett;
 }
 
 /* .logo {
@@ -419,6 +458,6 @@ These media queries are only related to the grid layout
     background: #111;
   }
   .logo img {
-    filter: invert(1);
+    /* filter: invert(1); */
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "./About.module.css";
 import Image from "next/image";
 
 const About = () => {

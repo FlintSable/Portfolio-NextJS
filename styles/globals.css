@@ -1,5 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 :root {
   --fs-xl: clamp(2em, 4vw + 1em, 20em);
+  --fs-l: clamp(1.5em, 3vw + 0.75em, 15em);
   --fs-600: 1.5rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem;
