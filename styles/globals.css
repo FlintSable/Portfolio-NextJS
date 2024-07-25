@@ -18,6 +18,19 @@ body {
   margin: 0;
 }
 
+.section-h1 {
+  text-transform: uppercase;
+  font: bold var(--fs-l) Roboto, sans-serif;
+
+}
+
+.section-interior {
+  margin: 0px auto;
+  max-width: 900px;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
