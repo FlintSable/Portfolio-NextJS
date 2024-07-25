@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "./About.module.css";
+
 import Image from "next/image";
 
 const About = () => {
   return (
     <div id="section-about" className={styles["main-about"]}>
-      <div className={styles["interior-about"]}>
-        <h1 className={styles["section-h1"]}>01. About</h1>
+      <div className={"section-interior"}>
+        <h1 className={"section-h1"}>01. About</h1>
         <div className={styles["layout-about"]}>
           <div className={styles["textbox-about"]}>
             <p className="text-p-about">
