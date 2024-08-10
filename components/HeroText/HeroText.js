@@ -16,7 +16,7 @@ const HeroText = () => {
       </p>
       <p className={styles["hero-tagline"]}>
         From troubleshooting systems to crafting code - I build, test and
-        support ....
+        support
       </p>
     </div>
   );

@@ -15,6 +15,27 @@
     max-width: 900px;
 }
 
+.experienceRow {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+.experienceRow time {
+    flex: 0 0 150px;
+    margin-right: 1.25rem;
+}
+
+.jobDetails {
+    flex: 1;
+}
+
+.roleCompany {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
 .section-h1 {
     text-transform: uppercase;
     font: bold var(--fs-l) Roboto, sans-serif;
