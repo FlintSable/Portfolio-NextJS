@@ -28,31 +28,27 @@
       )
       0% 0% / 80px 80px,
     rgb(242, 242, 242);
-    grid-template:
+    /* grid-template:
       "landing landing landing" 100vh
       "about about about" 100vh
-      "experience experience experience" 100vh
+      "experience experience experience"
       "projects projects projects" 100vh
-      "footer footer footer" 10px / 1fr 4fr 1fr;
+      "footer footer footer" 10px / 1fr 4fr 1fr; */
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-rows: 100vh auto auto auto auto;
+      grid-template-areas:
+        "landing landing landing"
+        "about about about"
+        "experience experience experience"
+        "projects projects projects"
+        "footer footer footer";
 }
 
 
 /* Media Queries */
 
-/* Phone */
-@media (max-width: var(--screen-xs)) {
-  .wrapper {
-    grid-template:
-      "landing" 100vh
-      "about" 100vh
-      "experience" 100vh
-      "projects" 100vh
-      "footer" 10vh;
-  }
-}
-
 /* Small Desktop */
-@media (min-width: calc(var(--screen-sm) + 0.02px)) and (max-width: var(--screen-md)) {
+@media (min-width: calc(767.98px + 0.02px)) and (max-width: 991.98px) {
   .wrapper {
     grid-template:
       "landing landing landing" 100vh
@@ -60,5 +56,14 @@
       "experience experience experience" 100vh
       "projects projects projects" 100vh
       "footer footer footer" 10px / 1fr 3fr 1fr;
+  }
+}
+
+/* Phone */
+@media (max-width: 575.98px) {
+  .wrapper {
+    grid-column: 1fr;
+    width: 100%;
+    padding: 0;
   }
 }
