@@ -7,6 +7,7 @@ import MainLanding from '@components/MainLanding/MainLanding';
 import About from '@components/About/About';
 import Experience from '@components/Experience/Experience';
 import userData from "@constants/data";
+import Projects from '@components/Projects/Projects';
 
 
 
@@ -25,6 +26,7 @@ export default function Home({children, ...customMeta}) {
       <MainLanding />
       <About />
       <Experience/>
+      <Projects/>
     </Container>
       
 

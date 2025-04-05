@@ -245,6 +245,7 @@ These media queries are only related to the grid layout
 
   /* text-shadow: 4px 3px 0px #1170b4, 9px 8px 0px rgba(2, 0, 33, 0.15); */
 }
+
 .main-about {
   grid-area: about / about / about / about;
   margin: 0px;

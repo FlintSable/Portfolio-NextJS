@@ -34,7 +34,7 @@ export default function MainLanding({ children, ...customMeta}){
                 <div>
                     {/* social media bar */}
                 </div>
-                <Email />
+                {/* <Email /> */}
                 {/* <Footer /> */}
 
         </div>

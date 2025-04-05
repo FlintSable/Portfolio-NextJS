@@ -1,3 +1,4 @@
+/* variables defined in globals.css */
 .wrapper {
   display: grid;
   max-width: 100vw;
@@ -27,38 +28,42 @@
       )
       0% 0% / 80px 80px,
     rgb(242, 242, 242);
+    /* grid-template:
+      "landing landing landing" 100vh
+      "about about about" 100vh
+      "experience experience experience"
+      "projects projects projects" 100vh
+      "footer footer footer" 10px / 1fr 4fr 1fr; */
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-rows: 100vh auto auto auto auto;
+      grid-template-areas:
+        "landing landing landing"
+        "about about about"
+        "experience experience experience"
+        "projects projects projects"
+        "footer footer footer";
 }
 
 
-/* Media Queries*/
-@media (width >= 300px) {
-  /* .wrapper {
-    grid-template-columns: auto auto;
-    grid-template:
-        "landing" 100vw
-        "about" 100vw
-        "eperience" 100vw
-        "projects" 100vw
-        "footer" 100vw;
-  } */
+/* Media Queries */
+
+/* Small Desktop */
+@media (min-width: calc(767.98px + 0.02px)) and (max-width: 991.98px) {
   .wrapper {
     grid-template:
       "landing landing landing" 100vh
       "about about about" 100vh
       "experience experience experience" 100vh
       "projects projects projects" 100vh
-      "footer footer footer" 10px / 1fr 4fr 1fr;
+      "footer footer footer" 10px / 1fr 3fr 1fr;
   }
 }
 
-/* applies only if width is >=700px */
-@media (max-width: 700px) {
+/* Phone */
+@media (max-width: 575.98px) {
   .wrapper {
-    grid-template:
-      "landing landing landing" 100vh
-      "about about about" 100vh
-      "experience experience experience" 100vh
-      "projects projects projects" 100vh
-      "footer footer footer" 10px / 1fr 4fr 1fr;
+    grid-column: 1fr;
+    width: 100%;
+    padding: 0;
   }
 }
