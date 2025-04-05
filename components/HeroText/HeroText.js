@@ -12,11 +12,12 @@ const HeroText = () => {
         Nicholas Noochla-or
       </div>
       <p className={styles["hero-subtitle"]}>
-        IT Support Professional with Software Development Skills.
+        Software Engineer with an IT background, focused on building practical
+        tools with C++, Python and JavaScript.
       </p>
       <p className={styles["hero-tagline"]}>
-        From troubleshooting systems to crafting code - I build, test and
-        support ....
+        From fixing systems to crafting code - I build, test and support
+        solutions
       </p>
     </div>
   );

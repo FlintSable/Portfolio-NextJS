@@ -23,7 +23,6 @@ export default function Header() {
             </li>
             <li className={styles.li}>
               <Link href="#section-experince">Experience</Link>
-              {/* <a href="#section-experince">Experince</a> */}
             </li>
             <li className={styles.li}>Projects</li>
             <li className={styles.li}>Resume</li>

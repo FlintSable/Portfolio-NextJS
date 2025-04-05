@@ -1,5 +1,8 @@
 .main-experience {
     grid-area: experience / experience / experience / experience;
+    /* width: 100%; */
+    max-width: 100vw;
+    /* min-height: 100vh; */
     margin: 0px;
     padding: 200px 0px;
     background: linear-gradient(
@@ -8,16 +11,122 @@
         rgb(18, 192, 255)
     );
     text-rendering: optimizelegibility;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-  
-.interior-experience {
+
+
+.section-interior{
     margin: 0px auto;
-    max-width: 900px;
+    /* max-width: 900px; */
+    position: relative;
+    /* width: 100%; */
 }
 
-.section-h1 {
-    text-transform: uppercase;
-    font: bold var(--fs-l) Roboto, sans-serif;
+.layout-experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, 0.8);  /* Increased opacity for better contrast */
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Added subtle shadow for depth */
+}
 
-    /* text-shadow: 4px 3px 0px #1170b4, 9px 8px 0px rgba(2, 0, 33, 0.15); */
+.experience-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);  /* White background for each item */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.experience-header {
+    margin-bottom: 15px;
+}
+
+.experience-title {
+    font-size: 1.4em;
+    color: #0077be;
+    margin: 0 0 5px 0;
+}
+
+.experience-company {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.experience-date {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.experience-role-company {
+    font-size: 1.1em;
+    color: #0077be;  /* Blue color for role and company */
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    color: #444;
+    line-height: 1.6;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.experience-description li{
+    margin-bottom: 10px;
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .section-interior {
+        max-width: 1100px;
+    }
+    .layout-experience {
+        max-width: 1100px;
+    }
+}
+
+/* Small Desktop */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .layout-experience {
+        max-width: 900px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-experience {
+        padding: 100px 5%;
+    }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+    .main-experience {
+        padding: 50px 5%;
+        /* overflow: hidden; */
+    }
+    .layout-experience {
+        padding: 20px;
+        /* max-height: none; */
+        /* overflow: visible; */
+    }
+    .experience-item {
+        padding: 15px;
+    }
+    .experience-title{
+        font-size: 1.2em;
+    }
+    .experience-company{
+        font-size: 1.1em;
+    }
 }
