@@ -3,94 +3,99 @@
 /* @import "tailwindcss/utilities"; */
 
 :root {
-  --fs-xl: clamp(2em, 4vw + 1em, 5rem);
-  --fs-l: clamp(1.5em, 3vw + 0.75em, 3.75em);
-  --fs-600: 1.5rem;
-  --fs-500: 1.25rem;
-  --fs-400: 1rem;
+    --fs-xl: clamp(2em, 4vw + 1em, 5rem);
+    --fs-l: clamp(1.5em, 3vw + 0.75em, 3.75em);
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
 
-  --screen-xs: 575.98px; /* Phone */
-  --screen-sm: 767.98px; /* Tablet */
-  --screen-md: 991.98px; /* small desktop */
-  --screen-lg: 1199.98px; /* large destkop */
+    --screen-xs: 575.98px; /* Phone */
+    --screen-sm: 767.98px; /* Tablet */
+    --screen-md: 991.98px; /* small desktop */
+    --screen-lg: 1199.98px; /* large destkop */
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+    margin: 0;
+}
+
+img {
+    max-heigh: 100%;
+    height: auto;
 }
 
 .section-h1 {
-  text-transform: uppercase;
-  font: bold var(--fs-l) Roboto, sans-serif;
-
+    text-transform: uppercase;
+    font:
+        bold var(--fs-l) Roboto,
+        sans-serif;
 }
 
 .section-interior {
-  margin: 0px auto;
-  max-width: 900px;
+    margin: 0px auto;
+    max-width: 900px;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  width: 0.5em;
+    width: 0.5em;
 }
 ::-webkit-scrollbar-track {
-  border-radius: 100vw;
-  margin-block: 1em;
+    border-radius: 100vw;
+    margin-block: 1em;
 }
 
 ::-webkit-scrollbar-thumb {
-  height: 8px;
-  background: hsl(215, 100%, 50%);
-  border-radius: 100vw;
-  background: rgb(18, 192, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(18, 192, 255, 1) 0%,
-    rgba(18, 192, 255, 1) 28%,
-    rgba(18, 192, 255, 0.5172443977591037) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(18, 192, 255, 1) 0%,
-    rgba(18, 192, 255, 1) 28%,
-    rgba(18, 192, 255, 0.5172443977591037) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(18, 192, 255, 1) 0%,
-    rgba(18, 192, 255, 1) 28%,
-    rgba(18, 192, 255, 0.5172443977591037) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#12c0ff",endColorstr="#12c0ff",GradientType=1);
+    height: 8px;
+    background: hsl(215, 100%, 50%);
+    border-radius: 100vw;
+    background: rgb(18, 192, 255);
+    background: -moz-linear-gradient(
+        180deg,
+        rgba(18, 192, 255, 1) 0%,
+        rgba(18, 192, 255, 1) 28%,
+        rgba(18, 192, 255, 0.5172443977591037) 100%
+    );
+    background: -webkit-linear-gradient(
+        180deg,
+        rgba(18, 192, 255, 1) 0%,
+        rgba(18, 192, 255, 1) 28%,
+        rgba(18, 192, 255, 0.5172443977591037) 100%
+    );
+    background: linear-gradient(
+        180deg,
+        rgba(18, 192, 255, 1) 0%,
+        rgba(18, 192, 255, 1) 28%,
+        rgba(18, 192, 255, 0.5172443977591037) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#12c0ff",endColorstr="#12c0ff",GradientType=1);
 }
-
 
 /* Phone */
 @media (max-width: var(--screen-xs)) {
-  :root {
-    --fs-xl: 2.5rem;
-    --fs-l: 2rem;
-    --fs-600: 1.25rem;
-    --fs-500: 1.125rem;
-    --fs-400: 1rem;
-  }
+    :root {
+        --fs-xl: 2.5rem;
+        --fs-l: 2rem;
+        --fs-600: 1.25rem;
+        --fs-500: 1.125rem;
+        --fs-400: 1rem;
+    }
 }
 
 /* Tablet */
 @media (min-width: calc(var(--screen-xs) + 0.02px)) and (max-width: var(--screen-sm)) {
-  :root {
-    --fs-xl: 3rem;
-    --fs-l: 2.25rem;
-    --fs-600: 1.375rem;
-    --fs-500: 1.25rem;
-    --fs-400: 1rem;
-  }
+    :root {
+        --fs-xl: 3rem;
+        --fs-l: 2.25rem;
+        --fs-600: 1.375rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
 }
