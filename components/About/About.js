@@ -6,8 +6,9 @@ import Image from "next/image";
 
 const aboutContent = {
   paragraphs: [
-    "Hi! I'm a developer based in Los Angeles, CA interested in working with web technologies, especially at the cross section of Front-end and Back-end engineering. My primary education is in Graphic Arts. I have a background in fixing desktops, laptops, servers and scripts mainly in CAD and 3D modeling design studio environments.",
-    "His ad iudico suavitate. Duo augue noster appareat ad. Aliquip oblique sed te. Mea tractatos repudiandae no. Modo mutat malorum ad est. Cu sint mollis neglegentur pri, inermis disputationi ne quo. Nam id blandit argumentum, sit paulo simul no."
+    "Hi! I'm a developer from California, now based in Pennsylvania where i'm completing my Computer Science degree at Oregon State University. My journey began with a degree in Graphic Arts from UC Santa Barbara, which sparked my interest in technology and led me to pursue IT and development roles over the past decade. My focus is on web technologies, especially at the intersection of Front-end and Back-end engineering, complemented by coursework in cybersecurity. After years of supporting complex systems in professional enterprise environments, I've gained valuable insight into building robust, user centered solutions that combine technical excellence and practical usability.",
+
+    "Throughout my career, I've cultivated a passion for solving complex problems through code. From scripting automation solutions to deploying enterprise wide systems, I enjoy the entire development lifecycle. My experience spans various technologies including Python, JavaScript, React, and cloud platforms. I'm particularly drawn to creating efficient, scalable applications that solve real-world challenges. When I'm not coding, you'll find me building custom computer systems, experimenting with different OS configurations, or running self hosted services like Truenas, Home Assistant and local LLMs.",
   ],
   skills: [
     "JavaScript",
@@ -17,14 +18,14 @@ const aboutContent = {
     "HTML/CSS",
     "Git",
     "SQL",
-    "RESTful APIs"
-  ]
+    "RESTful APIs",
+  ],
 };
-
 
 const About = () => {
   return (
-    <div id="section-about" className={styles["main-about"]}>
+    // <div id="section-about" className={styles["main-about"]}>
+    <div className={styles["main-about"]}>
       <div className={styles["section-interior"]}>
         <h1 className={styles["section-h1"]}>01. About</h1>
         <div className={styles["layout-about"]}>
@@ -57,4 +58,4 @@ const About = () => {
   );
 };
 
-export default About
+export default About;
