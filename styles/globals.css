@@ -28,16 +28,30 @@ img {
     height: auto;
 }
 
+/*
+.container {
+    /* box model
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: boarder-box;
+}
+*/
+
+/*
+.section-interior {
+    margin: 0px auto;
+    max-width: 900px;
+}
+*/
+
 .section-h1 {
     text-transform: uppercase;
     font:
         bold var(--fs-l) Roboto,
         sans-serif;
-}
-
-.section-interior {
-    margin: 0px auto;
-    max-width: 900px;
+    margin: 0 0 5px 0;
 }
 
 html {
