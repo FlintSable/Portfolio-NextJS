@@ -5,7 +5,15 @@ A personal portfolio site built with [Next.js](https://nextjs.org/. This project
 ## Project Checklist
 
 - [ ] Call-to-action button on hero section
-- [x] Custom tagline completed
 - [ ] Mobile responsiveness improvements
+- [ ] Mobile responsiveness audit
+- [ ] Menu bar improvements
 - [ ] Add featured project cards
+- [ ] Smooth scroll animation
+- [ ] SEO
+- [ ] analyitics integration
 - [ ] Connect experience section to JSON or Markdown data source
+- [ ] Skills documentation hub
+- [ ] Contact Form
+- [ ] Deployment
+- [x] Custom tagline completed
