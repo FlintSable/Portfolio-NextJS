@@ -27,7 +27,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className={styles["main-projects"]}>
+    <div id="section-projects" className={styles["main-projects"]}>
       <div className={styles["section-interior"]}>
         <h1 className={styles["section-h1"]}>03. Projects</h1>
         <div className={styles["layout-projects"]}>

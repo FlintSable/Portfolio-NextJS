@@ -1,0 +1,59 @@
+.
+├── README.md
+├── components
+│   ├── About
+│   │   ├── About.js
+│   │   └── About.module.css
+│   ├── Container
+│   │   ├── Container.js
+│   │   ├── Container.module.css
+│   │   └── ContainerBak.module.css
+│   ├── Experience
+│   │   ├── Experience.js
+│   │   └── Experience.module.css
+│   ├── Footer
+│   │   └── Footer.js
+│   ├── Header
+│   │   ├── Header.js
+│   │   └── Header.module.css
+│   ├── HeroText
+│   │   ├── HeroText.js
+│   │   └── HeroText.module.css
+│   ├── InteractContact
+│   │   ├── Email.js
+│   │   └── Email.module.css
+│   ├── MainLanding
+│   │   ├── MainLanding.js
+│   │   └── MainLanding.module.css
+│   ├── Nav
+│   │   └── Nav.js
+│   ├── Projects
+│   │   ├── Projects.js
+│   │   └── Projects.module.css
+│   └── Resume
+│       └── Resume.js
+├── constants
+│   └── data.js
+├── jsconfig.json
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── pages
+│   ├── _app.js
+│   ├── api
+│   │   └── hello.js
+│   └── index.js
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   ├── nic.png
+│   ├── pen.webp
+│   └── vercel.svg
+├── structure.txt
+├── styles
+│   ├── Email.module.css
+│   ├── Social.module.css
+│   └── globals.css
+└── tailwind.config.js
+
+18 directories, 39 files

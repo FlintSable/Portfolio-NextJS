@@ -10,21 +10,20 @@
   }
   
   .hero-text {
+    margin: 0px;
+    width: 100%;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    user-select: none;
     /* animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms infinite alternate none
       running layerize; */
     animation: 1200ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms running layerize
       forwards;
-    text-transform: uppercase;
-    opacity: 0;
-    margin: 0px;
-    width: 100%;
-    color: rgb(255, 255, 255);
     /* font: italic bold 5em Roboto, sans-serif; */
     font: italic bold var(--fs-xl) Roboto, sans-serif;
-  
-    cursor: default;
-    user-select: none;
-    text-align: center;
   }
   
 
@@ -73,28 +72,33 @@
 
   .hero-subtitle {
     margin-top: 0px;
-    font-style: italic;
-    font-size: 2em;
     color: white;
+    font-size: 2em;
     text-align: center;
     white-space: normal;
+    font-style: italic;
   }
   
   .hero-tagline {
     margin-top: 0px;
-    font-style: italic;
-    font-size: 2em;
+    padding: 0 15%;
     color: white;
+    font-size: 2em;
+    text-align: left;
+    font-style: italic;
     /* background-color: #8dd6e8; */
     white-space: normal;
-    padding: 0 15%;
-    text-align: lett;
   }
+/* Media Queries - Breakpoints*/
 
+/* Large (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Add any desktop-specific adjustments if needed */
+}
 
-
-/* Tablet */
-@media (max-width: 768px) {
+/* Medium (Tablets) */
+/* @media (max-width: 768px) { */
+@media (min-width: 768px) and (max-width: 991px) {
   .hero-text {
       font-size: 2.5em;
   }
@@ -109,8 +113,9 @@
   }
 }
 
-/* Phone */
-@media (max-width: 480px) {
+/* Small (Landscape phones, small tablets) */
+/* @media (max-width: 480px) { */
+@media (min-width: 576px) and (max-width: 767px) {
   .hero-text-box {
       display: flex;
       flex-direction: column;
