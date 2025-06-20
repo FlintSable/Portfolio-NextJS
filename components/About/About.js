@@ -25,7 +25,7 @@ const aboutContent = {
 const About = () => {
   return (
     // <div id="section-about" className={styles["main-about"]}>
-    <div className={styles["main-about"]}>
+    <div id="section-about" className={styles["main-about"]}>
       <div className={styles["section-interior"]}>
         <h1 className={styles["section-h1"]}>01. About</h1>
         <div className={styles["layout-about"]}>

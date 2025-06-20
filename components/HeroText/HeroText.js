@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "./HeroText.module.css";
+import HeroCTAGroup from "./HeroCTAGroup";
 
 const HeroText = () => {
   const [count, setCount] = useState(0);
@@ -19,6 +20,8 @@ const HeroText = () => {
         From fixing systems to crafting code - I build, test and support
         solutions
       </p>
+      {/* n. Call to action group */}
+      <HeroCTAGroup />
     </div>
   );
 };
