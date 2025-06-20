@@ -89,27 +89,16 @@
     /* background-color: #8dd6e8; */
     white-space: normal;
   }
+/* Media Queries - Breakpoints*/
 
-/* .cta-wrapper{
-  position:absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-} */
-
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Large (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Add any desktop-specific adjustments if needed */
 }
 
-/* Tablet */
-@media (max-width: 768px) {
+/* Medium (Tablets) */
+/* @media (max-width: 768px) { */
+@media (min-width: 768px) and (max-width: 991px) {
   .hero-text {
       font-size: 2.5em;
   }
@@ -124,8 +113,9 @@
   }
 }
 
-/* Phone */
-@media (max-width: 480px) {
+/* Small (Landscape phones, small tablets) */
+/* @media (max-width: 480px) { */
+@media (min-width: 576px) and (max-width: 767px) {
   .hero-text-box {
       display: flex;
       flex-direction: column;
