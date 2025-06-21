@@ -11,14 +11,14 @@
     --screen-xl: 1200px;  /* X-Large - Large desktops */
     --screen-xxl: 1400px; /* XX-Large - Extra-large desktops */
 
-  /* Media Query Usage Guide:
-     X-Small (Portrait phones):     max-width: 375px
-     Small (Landscape phones):      min-width: 576px and max-width: 767px
-     Medium (Tablets):              min-width: 768px and max-width: 991px
-     Large (Desktops):              min-width: 992px and max-width: 1199px
-     X-Large (Large desktops):      min-width: 1200px and max-width: 1399px
-     XX-Large (Extra-large):        min-width: 1400px
-  */
+/* Media Query Usage Guide:
+   X-Small (Portrait phones):     max-width: 575px        (0px to 575px)
+   Small (Landscape phones):      min-width: 576px and max-width: 767px
+   Medium (Tablets):              min-width: 768px and max-width: 991px
+   Large (Desktops):              min-width: 992px and max-width: 1199px
+   X-Large (Large desktops):      min-width: 1200px and max-width: 1399px
+   XX-Large (Extra-large):        min-width: 1400px       (1400px and up)
+*/
 
     --fs-xl: clamp(2em, 4vw + 1em, 5rem);
     --fs-l: clamp(1.5em, 3vw + 0.75em, 3.75em);
