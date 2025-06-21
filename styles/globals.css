@@ -3,16 +3,30 @@
 /* @import "tailwindcss/utilities"; */
 
 :root {
+
+
+    --screen-sm: 576px;   /* Small - Landscape phones, small tablets */
+    --screen-md: 768px;   /* Medium - Tablets, small laptops */
+    --screen-lg: 992px;   /* Large - Desktops */
+    --screen-xl: 1200px;  /* X-Large - Large desktops */
+    --screen-xxl: 1400px; /* XX-Large - Extra-large desktops */
+
+  /* Media Query Usage Guide:
+     X-Small (Portrait phones):     max-width: 375px
+     Small (Landscape phones):      min-width: 576px and max-width: 767px
+     Medium (Tablets):              min-width: 768px and max-width: 991px
+     Large (Desktops):              min-width: 992px and max-width: 1199px
+     X-Large (Large desktops):      min-width: 1200px and max-width: 1399px
+     XX-Large (Extra-large):        min-width: 1400px
+  */
+
     --fs-xl: clamp(2em, 4vw + 1em, 5rem);
     --fs-l: clamp(1.5em, 3vw + 0.75em, 3.75em);
     --fs-600: 1.5rem;
     --fs-500: 1.25rem;
     --fs-400: 1rem;
 
-    --screen-xs: 575.98px; /* Phone */
-    --screen-sm: 767.98px; /* Tablet */
-    --screen-md: 991.98px; /* small desktop */
-    --screen-lg: 1199.98px; /* large destkop */
+
 }
 
 * {
