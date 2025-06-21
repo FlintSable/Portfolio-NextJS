@@ -1,4 +1,4 @@
-# Portfolio-NextJS
+# Portfolio NextJS
 
 A personal portfolio site built with Next.js. This project showcases my software engineering background, IT experience, and technical projects in a clean and modern layout.
 
