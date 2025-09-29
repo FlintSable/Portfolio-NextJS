@@ -73,6 +73,25 @@
   }
 }
 
+/* Tablet (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    /* layout */
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto auto auto auto;
+    grid-template-areas:
+      "landing"
+      "about"
+      "experience"
+      "projects"
+      "footer";
+    
+    /* box model */
+    gap: 10px; /* Stylistic gaps between sections */
+    padding: 0 20px; /* Side padding for left/right gaps */
+  }
+}
+
 /* Phone */
 @media (max-width: 575.98px) {
   .wrapper {
