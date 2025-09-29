@@ -22,21 +22,28 @@
 
     /* misc */
     box-sizing: border-box;
+    overflow-x: hidden; /* adding this shows that experince is clipped meanin*/
 }
 
 .section-interior {
+    /* box model */
     margin: 0px auto;
     position: relative;
-    /* max-width: 900px; */
-    /* width: 100%; */
+
+
 }
 
 .layout-experience {
+    /* layout */
     display: grid;
     grid-template-columns: 1fr;
+
+    /* box model */
+    padding: 30px;
     gap: 30px;
     max-width: 900px;
-    padding: 30px;
+
+    /* visual */
     border-radius: 20px;
     background-color: hsla(
         0,
@@ -44,8 +51,8 @@
         100%,
         0.8
     ); /* Increased opacity for better contrast */
-    box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+    box-sizing: border-box;
 }
 
 .experience-item {
@@ -116,10 +123,44 @@
     }
 }
 
-/* Tablet */
+/* Tablet (768px - 991px) - MATCHING ABOUT SECTION */
 @media (min-width: 768px) and (max-width: 991px) {
     .main-experience {
-        padding: 100px 5%;
+        /* box model */
+        padding: 100px 20px;
+    }
+
+    .section-interior {
+        /* box model */
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .section-h1 {
+        /* box model */
+        margin: 0 0 30px 0;
+        padding-top: 0;
+    }
+
+    .layout-experience {
+        /* box model */
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .experience-item {
+        /* box model */
+        padding: 18px;
+    }
+
+    .experience-title {
+        /* typography */
+        font-size: 1.3em;
+    }
+
+    .experience-company {
+        /* typography */
+        font-size: 1.1em;
     }
 }
 

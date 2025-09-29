@@ -50,7 +50,7 @@
 
     /* misc */
     box-sizing: border-box;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .textbox-about {
@@ -102,9 +102,12 @@
 
 .img-about {
     /* box model */
+    display: flex;
     max-width: 320px;
     padding-right: 10px;
     margin-right: -60px;
+    align-items: flex-start;
+    justify-content: center;
 
     /* visual */
     filter: grayscale(100%);
@@ -116,11 +119,16 @@
     border-radius: 20px;
     width: 100%;
     height: auto;
+    max-width: 280px;
     filter: grayscale(100%);
 }
 
 .inline-img {
     display: none;
+}
+
+.paragraph-with-image {
+    position: relative;
 }
 
 /* large desktop */
@@ -143,18 +151,16 @@
     }
 }
 
-/* small desktop */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .main-about {
-        padding: 100px 5%;
-    }
-
+/* Medium desktop - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
     .section-interior {
         max-width: 960px;
+        padding: 0 15px;
     }
 
     .layout-about {
         max-width: 960px;
+        gap: 40px;
     }
 
     .textbox-about {
@@ -162,8 +168,61 @@
     }
 }
 
-/* tablet */
-@media (min-width: 575.98px) and (max-width: 767.98px) {
+
+/* Tablet Portrait - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-about {
+        padding: 120px 20px 80px;
+        min-height: auto;
+        height: auto;
+    }
+
+    .section-interior {
+        max-width: 100%;
+        padding: 0 30px;
+        /* margin-top: 40px; */
+    }
+
+    .section-h1 {
+        margin: 0 0 30px 0;
+        padding-top: 40px;
+    }
+
+    .layout-about {
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        padding: 25px;
+        max-width: 100%;
+    }
+
+    .textbox-about {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .img-about {
+        max-width: 100%;
+        padding: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .ul-about {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Landscape / Small Portrait - 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) {
     .main-about {
         padding: 100px 5%;
     }
@@ -192,16 +251,16 @@
         padding-right: 0;
     }
 
-    /* .custom-img{
-        width: 100%;
-        height: auto;
-    } */
+    .custom-img {
+        padding-top: 0;
+        max-width: 180px;
+    }
 }
 
-/* phone */
-@media (max-width: 575.98px) {
+/* Phone - max 575px */
+@media (max-width: 575px) {
     .main-about {
-        padding: 40px 5% 20px;
+        padding: 80px 5% 20px;
     }
 
     .section-interior {
