@@ -15,7 +15,7 @@ export default function Home({ children, ...customMeta }) {
     title: "Nicholas Noochla-or - Developer",
     description: "Coding out from the IT trenches.",
     image: "/avatar.png",
-    type: "webstie",
+    type: "website",
     ...customMeta,
   };
   return (
