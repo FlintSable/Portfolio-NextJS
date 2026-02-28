@@ -1,0 +1,46 @@
+.footer {
+    grid-area: footer;
+    padding: 24px 20px;
+    text-align: center;
+    background-color: #0a192f;
+    /* Break out of parent padding to span full viewport */
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+}
+
+.inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.credit {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: rgb(168, 178, 209);
+    transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.credit:hover {
+    color: rgb(18, 192, 255);
+}
+
+.tech {
+    margin: 8px 0 0;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    color: rgb(136, 146, 176);
+}
+
+/* Phone - container has no padding so no breakout needed */
+@media (max-width: 575.98px) {
+    .footer {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}

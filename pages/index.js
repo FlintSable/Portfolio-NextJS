@@ -9,6 +9,9 @@ import About from "@components/About/About";
 import Experience from "@components/Experience/Experience";
 import userData from "@constants/data";
 import Projects from "@components/Projects/Projects";
+import SocialLinks from "@components/InteractContact/SocialLinks";
+import Email from "@components/InteractContact/Email";
+import Footer from "@components/Footer/Footer";
 
 export default function Home({ children, ...customMeta }) {
   const meta = {
@@ -28,6 +31,9 @@ export default function Home({ children, ...customMeta }) {
       <About />
       <Experience />
       <Projects />
+      <Footer />
+      <SocialLinks />
+      <Email />
     </Container>
   );
 }
