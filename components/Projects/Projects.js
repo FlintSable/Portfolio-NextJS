@@ -3,25 +3,11 @@ import styles from "./Projects.module.css";
 
 const projects = [
   {
-    title: "E-commerce Platform",
+    title: "JOS64 Operating System",
     description:
-      "Developed a full-stack e-commerce platform using React, Node.js, and MongoDB.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    link: "https://github.com/yourusername/ecommerce-project",
-  },
-  {
-    title: "Weather App",
-    description:
-      "Created a weather application that fetches real-time data from a weather API.",
-    technologies: ["JavaScript", "API Integration", "CSS3", "HTML5"],
-    link: "https://github.com/yourusername/weather-app",
-  },
-  {
-    title: "Task Management System",
-    description:
-      "Built a task management system with user authentication and real-time updates.",
-    technologies: ["React", "Firebase", "Material-UI"],
-    link: "https://github.com/yourusername/task-manager",
+      "Built a 64-bit x86-64 OS kernel with UEFI boot, 4-level virtual memory, copy-on-write fork, multiprocessor support, and inter-process communication. Implemented across four labs for CS 476 Operating Systems.",
+    technologies: ["C", "x86-64 Assembly", "QEMU", "GDB"],
+    link: "https://github.com/FlintSable/jos64",
   },
 ];
 
