@@ -49,7 +49,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <div className={styles["main-experience"]}>
+    <div id="section-experience" className={styles["main-experience"]}>
       <div className={styles["section-interior"]}>
         <h1 className={styles["section-h1"]}>02. Experience</h1>
         <div className={styles["layout-experience"]}>

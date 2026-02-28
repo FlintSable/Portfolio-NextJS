@@ -22,10 +22,14 @@ export default function Header() {
               <Link href="#section-about">About</Link>
             </li>
             <li className={styles.li}>
-              <Link href="#section-experince">Experience</Link>
+              <Link href="#section-experience">Experience</Link>
             </li>
-            <li className={styles.li}>Projects</li>
-            <li className={styles.li}>Resume</li>
+            <li className={styles.li}>
+              <Link href="#section-projects">Projects</Link>
+            </li>
+            <li className={styles.li}>
+              <a href="https://www.linkedin.com/in/nicholasnoochlaor/" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
           </ul>
         </nav>
       </header>

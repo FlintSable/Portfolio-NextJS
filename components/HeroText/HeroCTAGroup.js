@@ -3,25 +3,14 @@ import styles from "./HeroCTAGroup.module.css";
 
 const HeroCTAGroup = () => {
   const scrollToSection = (sectionId) => {
-    // const element = document.getElementById(`section-${sectionId}`);
-    
-    let element;
-    if(sectionId === 'projects'){
-        element = document.querySelector('[class*="main-projects"]');
-    } else if (sectionId == 'about'){
-        element = document.getElementById('section-about')
-    }
+    const element = document.getElementById(`section-${sectionId}`);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const handleDownloadResume = () => {
-    // Create a temporary link element to trigger download
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Make sure this file exists in your public folder
-    link.download = 'Nicholas_Noochla-or_Resume.pdf';
-    link.click();
+  const handleViewLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/nicholasnoochlaor/', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -37,10 +26,10 @@ const HeroCTAGroup = () => {
         </button>
         <button
           className={styles["cta-secondary"]}
-          onClick={handleDownloadResume}
+          onClick={handleViewLinkedIn}
         >
-          Download Resume
-          <span className={styles["icon"]}>↓</span>
+          View LinkedIn
+          <span className={styles["icon"]}>→</span>
         </button>
       </div>
 
