@@ -23,7 +23,7 @@ export default function MainLanding({ children, ...customMeta}){
 
 
     return(
-        <div className={styles["main-landing"]}>
+        <div id="section-main" className={styles["main-landing"]}>
 
                 {/* add the rest of the components in here */}
                 {/* <Nav /> */}

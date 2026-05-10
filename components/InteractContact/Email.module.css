@@ -1,6 +1,6 @@
 .mailwrap {
     position: fixed;
-    width: 40px;
+    width: 44px;
     bottom: 0px;
     right: 40px;
     z-index: 10;
@@ -27,7 +27,10 @@
 }
 
 .a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
     text-decoration: none;
     position: relative;
     cursor: pointer;
@@ -48,8 +51,8 @@
     filter: drop-shadow(0 0 8px rgba(18, 192, 255, 0.6));
 }
 
-/* Hide sidebars on small screens */
-@media (max-width: 767px) {
+/* Hide sidebars on small and medium screens */
+@media (max-width: 991.98px) {
     .mailwrap {
         display: none;
     }

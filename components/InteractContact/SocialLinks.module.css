@@ -1,6 +1,6 @@
 .sidebar {
     position: fixed;
-    width: 40px;
+    width: 44px;
     bottom: 0px;
     left: 40px;
     z-index: 10;
@@ -30,7 +30,11 @@
 }
 
 .link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     color: rgba(255, 255, 255, 0.85);
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -43,8 +47,8 @@
     transform: translateY(-3px);
 }
 
-/* Hide sidebars on small screens */
-@media (max-width: 767px) {
+/* Hide sidebars on small and medium screens */
+@media (max-width: 991.98px) {
     .sidebar {
         display: none;
     }
