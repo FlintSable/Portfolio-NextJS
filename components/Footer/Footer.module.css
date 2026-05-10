@@ -15,7 +15,10 @@
 }
 
 .credit {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
     text-decoration: none;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 13px;
