@@ -40,8 +40,6 @@
 ├── package.json
 ├── pages
 │   ├── _app.js
-│   ├── api
-│   │   └── hello.js
 │   └── index.js
 ├── postcss.config.js
 ├── public

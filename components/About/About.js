@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const aboutContent = {
   paragraphs: [
-    "Hi! I'm a developer from California, now based in Pennsylvania where i'm completing my Computer Science degree at Oregon State University. My journey began with a degree in Graphic Arts from UC Santa Barbara, which sparked my interest in technology and led me to pursue IT and development roles over the past decade. My focus is on web technologies, especially at the intersection of Front-end and Back-end engineering, complemented by coursework in cybersecurity. After years of supporting complex systems in professional enterprise environments, I've gained valuable insight into building robust, user centered solutions that combine technical excellence and practical usability.",
+    "Hi! I'm a developer from California, now based in Pennsylvania where i'm completing my Computer Science degree at Oregon State University. My journey began with a degree in Graphic Arts from UC Santa Barbara, which sparked my interest in technology and led me to pursue IT and development roles over the past decade. My focus is on web technologies, especially at the intersection of frontend and backend engineering, complemented by coursework in cybersecurity. After years of supporting complex systems in professional enterprise environments, I've gained valuable insight into building robust, user centered solutions that combine technical excellence and practical usability.",
 
-    "Throughout my career, I've cultivated a passion for solving complex problems through code. From scripting automation solutions to deploying enterprise wide systems, I enjoy the entire development lifecycle. My experience spans various technologies including Python, JavaScript, React, and cloud platforms. I'm particularly drawn to creating efficient, scalable applications that solve real-world challenges. When I'm not coding, you'll find me building custom computer systems, experimenting with different OS configurations, or running self hosted services like Truenas, Home Assistant and local LLMs.",
+    "Throughout my career, I've cultivated a passion for solving complex problems through code. From scripting automation solutions to deploying enterprise wide systems, I enjoy the entire development lifecycle. My experience spans various technologies including Python, JavaScript, React, and cloud platforms. I'm particularly drawn to creating efficient, scalable applications that solve real world challenges. When I'm not coding, you'll find me building custom computer systems, experimenting with different OS configurations, or running self hosted services like Truenas, Home Assistant and local LLMs.",
   ],
   skills: [
     "JavaScript",
@@ -23,6 +23,8 @@ const aboutContent = {
 };
 
 const About = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     // <div id="section-about" className={styles["main-about"]}>
     <div id="section-about" className={styles["main-about"]}>
@@ -34,7 +36,7 @@ const About = () => {
             <div className={styles["paragraph-with-image"]}>
               <img
                 className={styles["inline-img"]}
-                src="/nic.png"
+                src={`${basePath}/nic.png`}
                 alt="Nicholas Noochla-or"
               />
               <p>{aboutContent.paragraphs[1]}</p>
@@ -48,7 +50,7 @@ const About = () => {
           <div className={styles["img-about"]}>
             <img
               className={styles["custom-img"]}
-              src="/nic.png"
+              src={`${basePath}/nic.png`}
               alt="Nicholas Noochla-or"
             />
           </div>

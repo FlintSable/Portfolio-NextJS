@@ -15,14 +15,14 @@ import Footer from "@components/Footer/Footer";
 
 export default function Home({ children, ...customMeta }) {
   const meta = {
-    title: "Nicholas Noochla-or - Developer",
+    title: "Nicholas Noochla-or | Developer",
     description: "Coding out from the IT trenches.",
     image: "/avatar.png",
     type: "website",
     ...customMeta,
   };
   return (
-    <Container title="Nicholas Noochla-or - Developer">
+    <Container title="Nicholas Noochla-or | Developer">
       <Head>
         <title>{meta.title}</title>
       </Head>
