@@ -4,7 +4,7 @@ import styles from "./Experience.module.css";
 
 const experienceData = [
   {
-    date: "April 2020 - August 2022",
+    date: "April 2020 to August 2022",
     jobTitle: "Senior IT Support Specialist",
     company: "Magnite",
     description: [
@@ -12,11 +12,11 @@ const experienceData = [
       "Utilized security monitoring tools and developed custom alerts to reduce security incidents by 30%.",
       "Automated software deployment procedures using Bash and PowerShell scripting during company mergers, ensuring efficient rollout to 3000+ employees.",
       "Configured and customized management systems (Jamf and Desktop Central) to maintain 99.9% system uptime across diverse environments.",
-      "Created technical documentation and developed troubleshooting guides for in-house software, reducing resolution time by 20% through improved knowledge management.",
+      "Created technical documentation and developed troubleshooting guides for in house software, reducing resolution time by 20% through improved knowledge management.",
     ],
   },
   {
-    date: "June 2018 - May 2022",
+    date: "June 2018 to May 2022",
     jobTitle: "Website Administrator & Technical Support",
     company: "Ecco Studios",
     description: [
@@ -28,7 +28,7 @@ const experienceData = [
     ],
   },
   {
-    date: "Feb 2018 - Dec 2019",
+    date: "Feb 2018 to Dec 2019",
     jobTitle: "Web Developer and IT Support",
     company: "Ecco Studios",
     description: [
@@ -39,11 +39,11 @@ const experienceData = [
     ],
   },
   {
-    date: "Feb 2018 - Dec 2019",
+    date: "Feb 2018 to Dec 2019",
     jobTitle: "Inventory Database Admin",
     company: "Granada Books",
     description:
-      "Developed software solutions and collaborated with cross-functional teams.",
+      "Developed software solutions and collaborated with cross functional teams.",
   },
 ];
 
@@ -58,7 +58,7 @@ const Experience = () => {
               <div className={styles["experience-header"]}>
                 <h2 className={styles["experience-title"]}>{exp.jobTitle}</h2>
                 <h3 className={styles["experience-company"]}>
-                  {exp.company} - {exp.location}
+                  {exp.location ? `${exp.company}, ${exp.location}` : exp.company}
                 </h3>
                 <p className={styles["experience-date"]}>{exp.date}</p>
               </div>

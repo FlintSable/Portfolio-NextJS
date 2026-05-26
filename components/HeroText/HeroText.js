@@ -17,7 +17,7 @@ const HeroText = () => {
         tools with C++, Python and JavaScript.
       </p>
       <p className={styles["hero-tagline"]}>
-        From fixing systems to crafting code - I build, test and support
+        From fixing systems to crafting code, I build, test and support
         solutions
       </p>
       {/* n. Call to action group */}
