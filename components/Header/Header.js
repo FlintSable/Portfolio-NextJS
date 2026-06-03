@@ -3,13 +3,14 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 
 const navLinks = [
-  { href: "#section-about", label: "About" },
-  { href: "#section-experience", label: "Experience" },
-  { href: "#section-projects", label: "Projects" },
+  { href: "/#section-about", label: "About" },
+  { href: "/#section-experience", label: "Experience" },
+  { href: "/#section-projects", label: "Projects" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   useEffect(() => {
     const closeOnEscape = (event) => {
@@ -25,12 +26,12 @@ export default function Header() {
   return (
     <header id="nav" className={styles.header}>
       <Link
-        href="#section-main"
+        href="/#section-main"
         className={styles.logo}
         aria-label="Back to top"
         onClick={() => setMenuOpen(false)}
       >
-        <img src="/pen.webp" alt="" />
+        <img src={`${basePath}/pen.webp`} alt="" />
       </Link>
 
       <button

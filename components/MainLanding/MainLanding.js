@@ -14,7 +14,7 @@ export default function MainLanding({ children, ...customMeta}){
 
 
     const meta = {
-        title: "Nicholas Noochla-or - Developer",
+        title: "Nicholas Noochla-or | Developer",
         description: "Coding out from the IT trenches.",
         image: "/avatar.png",
         type: "website",
