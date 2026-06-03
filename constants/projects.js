@@ -51,7 +51,7 @@ const projects = [
     highlights: [
       "Built core Express and PostgreSQL security architecture for auth, accounts, transfers, admin access, and vulnerability settings.",
       "Built the runtime toggle middleware, per user persistence, request header override transport, and three module active cap.",
-      "Shipped BOLA and brute force security demos, OpenAPI contracts, Docker workflow docs, and adversarial security tests.",
+      "Shipped BOLA, brute force, and SQL injection security demos, OpenAPI contracts, Docker workflow docs, and adversarial security tests.",
     ],
     sections: [
       {
@@ -67,12 +67,12 @@ const projects = [
       {
         heading: "Security Modules",
         body:
-          "The project includes ten vulnerability toggle entries and nine completed security demonstrations: broken object level authorization, privilege escalation, excessive data exposure, verbose errors, weak password storage, weak session tokens, brute force protection, reflected XSS, and stored XSS. Each completed module branches inside the same route, controller, or UI surface so the same user action can show both an exploit and its mitigation. SQL injection is tracked as planned work, so the profile does not present it as a completed demo.",
+          "The project includes ten vulnerability toggle entries and ten completed security demonstrations: broken object level authorization, privilege escalation, excessive data exposure, verbose errors, weak password storage, weak session tokens, brute force protection, reflected XSS, stored XSS, and SQL injection. Each module branches inside the same route, controller, or UI surface so the same user action can show both an exploit and its mitigation.",
       },
       {
         heading: "My Contributions",
         body:
-          "My work centered on backend and security teaching architecture: JWT auth and account APIs, PostgreSQL backed models, namespaced vulnerability flags, anonymous toggle header transport, per user toggle persistence with a three module cap, the BOLA and brute force modules, adversarial Jest and Supertest coverage, OpenAPI contract cleanup, and workflow docs for local, Docker, and EC2 demos. I also strengthened auth route guards, logout hydration, reflected XSS behavior, and toggle pending state as the team integrated the modules.",
+          "My work centered on backend and security teaching architecture: JWT auth and account APIs, PostgreSQL backed models, namespaced vulnerability flags, anonymous toggle header transport, per user toggle persistence with a three module cap, the BOLA, brute force, and SQL injection modules (the SQLi demo uses a separate Postgres role and read only view so payloads execute against a sandbox, not the live tables), adversarial Jest and Supertest coverage, OpenAPI contract cleanup, and workflow docs for local, Docker, and EC2 demos. I also strengthened auth route guards, logout hydration, reflected XSS behavior, and toggle pending state as the team integrated the modules.",
       },
     ],
   },
